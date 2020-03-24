@@ -1,4 +1,4 @@
-$main: #4bb543;
+$success: #4bb543; // green
 $white: #ECF0F1;
 $black: #212121;
 
@@ -23,7 +23,7 @@ body {
 }
 
 .color {
-    color: $main;
+    color: $success;
     font-weight: 500;
 }
 
@@ -50,7 +50,9 @@ body {
         font-size: 10rem;
         user-select: none;
 
-        font-family: 'Roboto Mono', monospace;
+        span {
+            font-family: 'Roboto Mono', monospace;
+        }
     }
 
     .buttons {
@@ -62,7 +64,6 @@ body {
         #reset,
         #start {
             cursor: pointer;
-            // padding: 10px 30px;
             width: 100px;
             height: 100px;
 
@@ -89,7 +90,7 @@ body {
         }
 
         #start {
-            background-color: $main;
+            background-color: $success;
             color: $white;
 
             &:hover {
