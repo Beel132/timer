@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  height: 100vh;
+  font-size: 20px;
+  background: #ECE9E6;
+  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(#ECE9E6));
+  background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+}
+
+.color {
+  color: #4bb543;
+  font-weight: 500;
+}
+
+#container {
+  width: 50%;
+  height: 100vh;
+  color: #212121;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container h1.title {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 10px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#container h1#timer {
+  font-size: 10rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#container .buttons {
+  margin: 50px 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#container .buttons #reset,
+#container .buttons #start {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.15);
+          box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.15);
+  font-size: 1.2rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#container .buttons #reset {
+  background-color: #212121;
+  color: #ECF0F1;
+}
+
+#container .buttons #reset:hover {
+  background-color: #474747;
+}
+
+#container .buttons #start {
+  background-color: #4bb543;
+  color: #ECF0F1;
+}
+
+#container .buttons #start:hover {
+  background-color: #6cc665;
+}
+/*# sourceMappingURL=style.css.map */
